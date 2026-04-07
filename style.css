@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.purina {
+  color: #000;
+}
+
+#indexHeader h1 {
+  padding-left: 1rem;
+  background-color: burlywood;
+  border-style: solid;
+  border-color: black;
+}
+
+.max {
+  color: darkgoldenrod;
+}
+
+#indexHeader section {
+  border: solid;
+  border-top: 0;
+  border-bottom: 0;
+  background-color: rgba(250 150 20 / 0.2);
+  text-align: center;
+}
+
+#indexHeader div {
+  border-style: solid;
+  border-color: black;
+  background-image: url("./indexBackgroundImage.avif");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  /* horizontal */
+  align-items: center;
+  /* vertical */
+}
+
+
+
+#indexHeader h2 {
+  text-align: center;
+  color: #ffffff8f;
+  padding: 1vh;
+  border-style: dashed;
+  border-color: #ffffff8f;
+  border-radius: 2rem;
+  max-width: 50%;
+  font-size: 4vh;
+
+}
+
+/* Main */
+
+.indexMain {
+  background-color: rgba(250 150 20 / 0.2);
+
+}
+
+.indexMain article {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: burlywood;
+}
+
+.nuevosProductos {
+  text-decoration: underline;
+  text-align: center;
+  padding: 2rem 0rem 1rem 0rem;
+
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.producto {
+  border-style: solid;
+  border-color: #000;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.producto.reverse {
+  border-style: solid;
+  border-color: #000;
+  margin: 1rem;
+  flex-direction: row-reverse;
+  
+  
+}
+
+.producto img {
+  border-style: solid;
+  border-color: #000;
+  width: 100%;
+  max-width: 30rem;
+  height: 100%;
+}
+
+.producto p {
+  flex: 1;
+
+}
+
+.indexMain h2 {
+  text-decoration: underline;
+}
+
+.beneficios {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 20vh;
+  gap: 3rem;
+}
+
+.beneficios ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+
+/* Footer */
+
+.indexFooter {
+  background-color:rgb(146, 95, 27);
+  border-style: solid;
+  border-color: rgb(0 0 0);
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+a::after {
+  color: #fff;
+}
+.indexFooter article {
+  text-transform: uppercase;
+  text-decoration: underline; 
+  padding: 1rem 3rem 2rem 2rem;
+}
+
+.masInfo{
+  padding: 1rem;
+}
+.enlaces {
+  display: flex;
+  flex-direction: column;
+  text-decoration: underline;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: burlywood;
+  min-width: 15%;
+}
+
+.colorBlanco {
+  color: rgb(255 255 255);
+}
+
+#título h1 {
+  color: rgb(rgb(200 250 20));
+}
+
+
+
+
+/* Dispositivos */
