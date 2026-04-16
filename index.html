@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PurinaDog Promax | Lo mejor para tu mejor amigo</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -14,17 +16,36 @@
     <header id="indexHeader">
         <div class="topHeader">
             <h1 class="purina">PurinaDog<span class="max">ProMax</span></h1>
+
+            <!-- LINKS DESKTOP -->
             <div class="linksHeader">
                 <a href="index.html">inicio</a>
                 <a href="indexContacto.html">contacto</a>
                 <a href="indexNosotros.html">nosotros</a>
-                <a href="Sobre Nosotros">trabaja con nos</a>
+                <a href="#">trabaja con nos</a>
                 <a href="indexContacto.html">iniciar sesión</a>
             </div>
+
+            <!-- NAVBAR MOBILE -->
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="linksMobile">
+                            <a href="index.html">inicio</a>
+                            <a href="indexContacto.html">contacto</a>
+                            <a href="indexNosotros.html">nosotros</a>
+                            <a href="#">trabaja con nos</a>
+                            <a href="indexContacto.html">iniciar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>   
         </div>
-        <section>
-            Sabores Premium
-        </section>
         <div class="fondoPerro">
             <h2 class="eslogan">Una forma distinta de alimentar a tu mascota</h2>
         </div>
@@ -38,12 +59,27 @@
 
             <article class="producto">
                 <img src="productoPyC.png" alt="Imagen de producto 1">
-                <p>Texto del producto 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, enim. Ad, hic laudantium, nulla magnam atque nesciunt nostrum perferendis aspernatur debitis molestiae fugiat, expedita consequatur fugit at voluptatem nihil molestias eligendi voluptatum dolores eum dolorem. Earum vitae optio at aspernatur molestias itaque molestiae cupiditate, soluta, quia quos illo nam amet deserunt commodi, reiciendis excepturi dolorum. Necessitatibus obcaecati iste suscipit? Inventore aliquid sed quasi odio voluptatum reiciendis, nihil est asperiores, repellendus odit assumenda et voluptas. Ad, optio quae. Laudantium et officia fugiat mollitia! Fuga ea sint cum debitis eius, soluta odio dolorem laudantium alias consectetur ab maiores? Soluta voluptatibus assumenda aut!
+                <p>Texto del producto 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, enim. Ad, hic
+                    laudantium, nulla magnam atque nesciunt nostrum perferendis aspernatur debitis molestiae fugiat,
+                    expedita consequatur fugit at voluptatem nihil molestias eligendi voluptatum dolores eum dolorem.
+                    Earum vitae optio at aspernatur molestias itaque molestiae cupiditate, soluta, quia quos illo nam
+                    amet deserunt commodi, reiciendis excepturi dolorum. Necessitatibus obcaecati iste suscipit?
+                    Inventore aliquid sed quasi odio voluptatum reiciendis, nihil est asperiores, repellendus odit
+                    assumenda et voluptas. Ad, optio quae. Laudantium et officia fugiat mollitia! Fuga ea sint cum
+                    debitis eius, soluta odio dolorem laudantium alias consectetur ab maiores? Soluta voluptatibus
+                    assumenda aut!
             </article>
 
             <article class="producto reverse">
                 <img src="productoCordero.png" alt="Imagen de producto 2">
-                <p>Texto del producto 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eaque reiciendis excepturi hic quos. Officiis, quam commodi ullam suscipit maiores architecto dolore mollitia accusantium neque fugit magni voluptatum officia nihil molestias at ex laborum illum. Unde sequi ipsa voluptatibus omnis cumque nam, atque fugiat vitae autem sapiente voluptas numquam consequuntur harum velit, ducimus, eius asperiores molestiae temporibus doloremque modi quos repudiandae ratione veritatis? Doloribus, architecto quas fugiat harum corrupti neque unde dolorem fugit voluptate delectus? Ab nisi eveniet delectus sunt quibusdam atque ex dolorem sint, culpa natus sit hic expedita tempora voluptates quis fuga eos saepe pariatur enim minima. Amet!</p>
+                <p>Texto del producto 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eaque reiciendis
+                    excepturi hic quos. Officiis, quam commodi ullam suscipit maiores architecto dolore mollitia
+                    accusantium neque fugit magni voluptatum officia nihil molestias at ex laborum illum. Unde sequi
+                    ipsa voluptatibus omnis cumque nam, atque fugiat vitae autem sapiente voluptas numquam consequuntur
+                    harum velit, ducimus, eius asperiores molestiae temporibus doloremque modi quos repudiandae ratione
+                    veritatis? Doloribus, architecto quas fugiat harum corrupti neque unde dolorem fugit voluptate
+                    delectus? Ab nisi eveniet delectus sunt quibusdam atque ex dolorem sint, culpa natus sit hic
+                    expedita tempora voluptates quis fuga eos saepe pariatur enim minima. Amet!</p>
             </article>
 
         </section>
@@ -66,14 +102,26 @@
             <nav>
                 <h3 class="masInfo">Mas informacíon:</h3>
                 <ul class="enlaces">
-                    <li><h4><a target="_blank" href="link">Twitter</a></h4></li>
-                    <li><h4><a target="_blank" href="link">Instagram</a></h4></li>
-                    <li><h4><a target="_blank" href="link">avisos legales</a></h4></li>
-                    <li><h4><a target="_blank" href="link">Contactos</a></h4></li>
+                    <li>
+                        <h4><a target="_blank" href="link">Twitter</a></h4>
+                    </li>
+                    <li>
+                        <h4><a target="_blank" href="link">Instagram</a></h4>
+                    </li>
+                    <li>
+                        <h4><a target="_blank" href="link">avisos legales</a></h4>
+                    </li>
+                    <li>
+                        <h4><a target="_blank" href="link">Contactos</a></h4>
+                    </li>
                 </ul>
             </nav>
         </article>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
