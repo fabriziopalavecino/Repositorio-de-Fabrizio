@@ -9,15 +9,58 @@
   color: #000;
 }
 
-#indexHeader h1 {
-  padding-left: 1rem;
-  background-color: burlywood;
-  border-style: solid;
-  border-color: black;
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: darkgoldenrod;
 }
+
+
 
 .max {
   color: darkgoldenrod;
+}
+
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: burlywood;
+  border-bottom: solid black;
+  font-size: clamp(0.5vh, 4vw, 1rem);
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+}
+
+.topHeader h1 {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.linksHeader {
+  font-size: 1rem;
+  font-family: cursive;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/*reducir tamaño a partir de los 600px*/
+
+
+.topHeader a {
+  color: darkgoldenrod;
+  padding: 0.5rem;
+}
+
+a:hover {
+  background-color: rgb(146, 95, 27);
+  color: #fff;
 }
 
 #indexHeader section {
@@ -28,7 +71,7 @@
   text-align: center;
 }
 
-#indexHeader div {
+.fondoPerro {
   border-style: solid;
   border-color: black;
   background-image: url("./indexBackgroundImage.avif");
@@ -44,6 +87,8 @@
 
 
 
+
+
 #indexHeader h2 {
   text-align: center;
   color: #ffffff8f;
@@ -51,9 +96,8 @@
   border-style: dashed;
   border-color: #ffffff8f;
   border-radius: 2rem;
-  max-width: 50%;
-  font-size: 4vh;
-
+  min-width: 50%;
+  font-size: clamp(0.5rem, 2vw, 2rem)
 }
 
 /* Main */
@@ -99,8 +143,8 @@
   border-color: #000;
   margin: 1rem;
   flex-direction: row-reverse;
-  
-  
+
+
 }
 
 .producto img {
@@ -142,34 +186,39 @@
 /* Footer */
 
 .indexFooter {
-  background-color:rgb(146, 95, 27);
+  background-color: rgb(146, 95, 27);
   border-style: solid;
   border-color: rgb(0 0 0);
   border-right: 0;
   border-bottom: 0;
   border-left: 0;
+  font-size: clamp(0.5rem, 4vw, 1rem);
 }
 
 a::after {
   color: #fff;
 }
+
 .indexFooter article {
   text-transform: uppercase;
-  text-decoration: underline; 
+  text-decoration: none;
   padding: 1rem 3rem 2rem 2rem;
 }
 
-.masInfo{
-  padding: 1rem;
+.masInfo {
+  padding-bottom: 1rem;
 }
+
 .enlaces {
   display: flex;
   flex-direction: column;
-  text-decoration: underline;
+  text-decoration: none;
   gap: 1rem;
   padding: 2rem;
   background-color: burlywood;
+  border-radius: 1rem;
   min-width: 15%;
+  list-style-type: none;
 }
 
 .colorBlanco {
@@ -184,3 +233,41 @@ a::after {
 
 
 /* Dispositivos */
+
+@media only screen and (max-width: 900px) {
+  .topHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:flex-start;
+    padding: 0.5rem;
+    background-color: burlywood;
+    border-bottom: solid black;
+    font-size: clamp(0.2vh, 4vw, 1rem);
+    height: auto;
+  }
+
+
+  .linksHeader {
+    min-width: none; font-size: clamp(0.2rem, 0.7rem, 1rem);
+    padding: 1rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .beneficios ul {
+    font-size: 0.7rem;
+  }
+
+
+}
+
+
+.indexMain ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
