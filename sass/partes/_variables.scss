@@ -1,0 +1,18 @@
+a:hover {
+  color: #fff !important;
+} 
+
+a:hover {
+  background-color: rgb(146, 95, 27);
+  color: #fff;
+}
+
+.navbar {
+  display: none !important;
+}
+
+// mixin flex column direction.
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}

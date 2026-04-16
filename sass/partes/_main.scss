@@ -1,0 +1,76 @@
+@use "variables" as v;
+
+.indexMain {
+    background-color: rgba(250 150 20 / 0.2);
+
+    .nuevosProductos {
+        text-decoration: underline;
+        text-align: center;
+        padding: 2rem 0rem 1rem 0rem;
+    }
+
+    .productos {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .producto {
+            border-style: solid;
+            border-color: #000;
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 2rem 1rem 2rem 1rem;
+
+            img {
+                border-style: solid;
+                border-color: #000;
+                width: 100%;
+                max-width: 30rem;
+                height: 100%;
+            }
+
+            p {
+                flex: 1;
+            }
+        }
+
+        .producto.reverse {
+            border-style: solid;
+            border-color: #000;
+            margin: 1rem;
+            flex-direction: row-reverse;
+        }
+
+
+    }
+
+    .beneficios {
+        @include v.flex-column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 20vh;
+        gap: 3rem;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+    .beneficios {
+        ul {
+            font-size: 0.7rem;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@use "variables" as v;
+
+.indexFooter {
+    background-color: rgb(146, 95, 27);
+    border-style: solid;
+    border-color: rgb(0 0 0);
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    font-size: clamp(0.5rem, 4vw, 1rem);
+
+    article {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 3rem 2rem 2rem;
+
+        nav {
+            .masInfo {
+                font-size: small;
+                padding-bottom: 1rem;
+
+                .enlaces {
+                    @include v.flex-column;
+                    text-decoration: none;
+                    gap: 1rem;
+                    padding: 2rem;
+                    background-color: burlywood;
+                    border-radius: 1rem;
+                    min-width: 15%;
+                    list-style-type: none;
+                    font-size: smaller;
+
+                    li {
+                        h4 {
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
