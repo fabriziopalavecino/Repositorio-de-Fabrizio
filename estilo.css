@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+}
 
 a {
   text-transform: uppercase;
@@ -15,17 +17,32 @@ a {
 
 a:hover {
   color: #fff !important;
-} 
+}
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
+main {
+  flex: 1;
+}
+
+a:hover {
+  color: #fff !important;
+}
+
+a:hover {
+  background-color: rgb(146, 95, 27);
+  color: #fff;
+}
 
 .navbar {
   display: none !important;
 }
 
-
-
-.topHeader {
+#indexHeader .topHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,41 +53,28 @@ a:hover {
   position: fixed;
   width: 100%;
 }
-
-
-.topHeader h1 {
+#indexHeader .topHeader h1 {
   font-size: clamp(1rem, 4vw, 1.5rem);
 }
-
-.purina {
+#indexHeader .topHeader .purina {
   color: #000;
 }
-
-.max {
+#indexHeader .topHeader .purina .max {
   color: darkgoldenrod;
 }
-
-
-.linksHeader {
+#indexHeader .topHeader .linksHeader {
   font-size: 1rem;
   font-family: cursive;
 }
-
-/*reducir tamaño a partir de los 600px*/
-
-
-.topHeader a {
+#indexHeader .topHeader .linksHeader a {
   color: darkgoldenrod;
   padding: 0.5rem;
 }
-
-a:hover {
+#indexHeader .topHeader .linksHeader a:hover {
   background-color: rgb(146, 95, 27);
   color: #fff;
 }
-
-
-.fondoPerro {
+#indexHeader .fondoPerro {
   border-style: solid;
   border-color: black;
   background-image: url("./indexBackgroundImage.avif");
@@ -83,73 +87,97 @@ a:hover {
   align-items: center;
   /* vertical */
 }
-
-#indexHeader h2 {
+#indexHeader .fondoPerro .eslogan {
   text-align: center;
-  color: #ffffff8f;
+  color: rgba(255, 255, 255, 0.5607843137);
   padding: 1vh;
   border-style: dashed;
-  border-color: #ffffff8f;
+  border-color: rgba(255, 255, 255, 0.5607843137);
   border-radius: 2rem;
   min-width: 50%;
-  font-size: clamp(0.5rem, 2vw, 2rem)
+  font-size: clamp(0.5rem, 2vw, 2rem);
 }
 
-/* Main */
+#indexHeader .topHeader .navbar {
+  display: none !important;
+}
 
+@media only screen and (max-width: 900px) {
+  #indexHeader .topHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 0.5rem;
+    background-color: burlywood;
+    border-bottom: solid black;
+    font-size: clamp(0.2vh, 4vw, 1rem);
+    height: auto;
+  }
+  #indexHeader .topHeader .linksHeader {
+    display: none;
+  }
+  #indexHeader .topHeader .navbar {
+    display: block !important;
+  }
+  #indexHeader .topHeader .navbar div div .linksMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+}
 .indexMain {
-  background-color: rgba(250 150 20 / 0.2);
+  background-color: rgba(250, 150, 20, 0.2);
 }
-
-
-.nuevosProductos {
+.indexMain .nuevosProductos {
   text-decoration: underline;
   text-align: center;
   padding: 2rem 0rem 1rem 0rem;
 }
-
-.productos {
+.indexMain .productos {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
-
-.producto {
+.indexMain .productos .producto {
   display: flex;
-  gap: 2rem;
-  align-items: center;
   flex-wrap: wrap;
   background-color: burlywood;
   border-style: solid;
   border-color: #000;
   margin: 1rem;
-  display: flex;
   align-items: center;
   gap: 2rem;
   padding: 2rem 1rem 2rem 1rem;
 }
-
-.producto.reverse {
-  border-style: solid;
-  border-color: #000;
-  margin: 1rem;
-  flex-direction: row-reverse;
-}
-
-.producto img {
+.indexMain .productos .producto img {
   border-style: solid;
   border-color: #000;
   width: 100%;
   max-width: 30rem;
   height: 100%;
 }
-
-.producto p {
+.indexMain .productos .producto p {
   flex: 1;
 }
-
-
-.beneficios {
+.indexMain .productos .producto.reverse {
+  border-style: solid;
+  border-color: #000;
+  margin: 1rem;
+  flex-direction: row-reverse;
+}
+.indexMain .productos .producto.reverse img {
+  border-style: solid;
+  border-color: #000;
+  width: 100%;
+  max-width: 30rem;
+  height: 100%;
+}
+.indexMain .productos .producto.reverse p {
+  flex: 1;
+}
+.indexMain .beneficios {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,8 +186,7 @@ a:hover {
   min-height: 20vh;
   gap: 3rem;
 }
-
-.beneficios ul {
+.indexMain .beneficios ul {
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
@@ -168,37 +195,30 @@ a:hover {
   padding: 2rem;
 }
 
-
-
-/* Footer */
-
+@media only screen and (max-width: 900px) {
+  .beneficios ul {
+    font-size: 0.7rem;
+  }
+}
 .indexFooter {
   background-color: rgb(146, 95, 27);
   border-style: solid;
-  border-color: rgb(0 0 0);
+  border-color: rgb(0, 0, 0);
   border-right: 0;
   border-bottom: 0;
   border-left: 0;
   font-size: clamp(0.5rem, 4vw, 1rem);
 }
-
-
 .indexFooter article {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1rem 3rem 2rem 2rem;
 }
-
-.indexFooter h3,
-.indexFooter h4 {
+.indexFooter article nav .masInfo {
   font-size: small;
-}
-
-.masInfo {
   padding-bottom: 1rem;
 }
-
-.enlaces {
+.indexFooter article nav .enlaces {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -210,44 +230,8 @@ a:hover {
   list-style-type: none;
   font-size: smaller;
 }
-
-
-
-
-/* Dispositivos */
-
-@media only screen and (max-width: 900px) {
-  .topHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    padding: 0.5rem;
-    background-color: burlywood;
-    border-bottom: solid black;
-    font-size: clamp(0.2vh, 4vw, 1rem);
-    height: auto;
-  }
-
-
-  .linksHeader {
-    display: none;
-  }
-
-  /* navbar despliegue */
-  .navbar {
-    display: block !important;
-  }
-
-  .linksMobile {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-
-  .beneficios ul {
-    font-size: 0.7rem;
-  }
-
+.indexFooter article nav .enlaces li h4 {
+  font-size: small;
 }
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: darkgoldenrod !important;
+  /* luego de agregar boostrap dejaron de tener efecto */
+}
+
+a:hover {
+  color: #fff !important;
+} 
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

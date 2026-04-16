@@ -1,6 +1,6 @@
 @use "variables" as v;
 
-.indexHeader {
+#indexHeader {
     .topHeader {
         .navbar {
             display: none !important;
@@ -9,18 +9,35 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .navbar {
-        display: block !important;
+    #indexHeader {
+        .topHeader {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            padding: 0.5rem;
+            background-color: burlywood;
+            border-bottom: solid black;
+            font-size: clamp(0.2vh, 4vw, 1rem);
+            height: auto;
+            .linksHeader {
+                display: none;
+            }
+            .navbar {
+                display: block !important;
 
-        div {
-            div {
-                .linksMobile {
-                    @include v.flex-column;
-                    gap: 1rem;
-                    padding: 1rem 0;
+                div {
+                    div {
+                        .linksMobile {
+                            @include v.flex-column;
+                            gap: 1rem;
+                            padding: 1rem 0;
+                        }
+
+                    }
                 }
-
             }
         }
+
     }
 }

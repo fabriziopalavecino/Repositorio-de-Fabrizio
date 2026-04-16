@@ -18,24 +18,23 @@
             .masInfo {
                 font-size: small;
                 padding-bottom: 1rem;
+            }
+            .enlaces {
+                @include v.flex-column;
+                text-decoration: none;
+                gap: 1rem;
+                padding: 2rem;
+                background-color: burlywood;
+                border-radius: 1rem;
+                min-width: 15%;
+                list-style-type: none;
+                font-size: smaller;
 
-                .enlaces {
-                    @include v.flex-column;
-                    text-decoration: none;
-                    gap: 1rem;
-                    padding: 2rem;
-                    background-color: burlywood;
-                    border-radius: 1rem;
-                    min-width: 15%;
-                    list-style-type: none;
-                    font-size: smaller;
-
-                    li {
-                        h4 {
-                            font-size: small;
-                        }
+                li {
+                    h4 {
+                            font-size: small;                           
                     }
-                }
+                }                
             }
         }
     }
