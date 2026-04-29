@@ -31,11 +31,15 @@
             a {
                 color: darkgoldenrod;
                 padding: 0.5rem;
+
+                transition: 1s all easy-in;
             }
 
             a:hover {
                 background-color: rgb(146, 95, 27);
                 color: #fff;
+
+                transition: 1s all easy-in;
             }
         }
     }
@@ -43,16 +47,14 @@
     .fondoPerro {
         border-style: solid;
         border-color: black;
-        background-image: url("./indexBackgroundImage.avif");
+        background-image: url("/imágenes/indexBackgroundImage.avif");
         background-size: cover;
         background-position: center;
         height: 70vh;
         display: flex;
         justify-content: center;
-        /* horizontal */
         align-items: center;
 
-        /* vertical */
         .eslogan {
             text-align: center;
             color: #ffffff8f;

@@ -10,8 +10,7 @@
     }
 
     .productos {
-        display: flex;
-        flex-direction: column;
+        @include v.flex-column;
         gap: 3rem;
 
         .producto {
@@ -67,14 +66,37 @@
         justify-content: center;
         text-align: center;
         min-height: 20vh;
-        gap: 3rem;
 
         ul {
             @include v.flex-column;
             margin-bottom: 0;
             display: flex;
             gap: 2rem;
+            padding: 3rem;
+        }
+    }
+
+    .mainNosotros {
+        padding: 3rem;
+
+        ul {
             padding: 2rem;
+
+            li {
+                padding: 1rem;
+            }
+        }
+    }
+
+    .indexContacto {
+        padding: 3rem;
+
+        ul {
+            gap: 1rem;
+
+            li {
+                padding: 1rem;
+            }
         }
     }
 
