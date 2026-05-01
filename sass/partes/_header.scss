@@ -31,15 +31,19 @@
             a {
                 color: darkgoldenrod;
                 padding: 0.5rem;
+                border-radius: 1rem;
 
-                transition: 1s all easy-in;
+                display: inline-block;
+                transition: 0.5s;
+
             }
 
             a:hover {
                 background-color: rgb(146, 95, 27);
                 color: #fff;
 
-                transition: 1s all easy-in;
+                color: white;
+                transform: scale(1.1);
             }
         }
     }
@@ -67,5 +71,3 @@
         }
     }
 }
-
-
